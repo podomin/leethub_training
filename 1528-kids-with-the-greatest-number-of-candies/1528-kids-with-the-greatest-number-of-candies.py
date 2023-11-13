@@ -4,14 +4,12 @@ class Solution:
         # 2. for 문을 돌면서 현재 candy 개수와 extraCandies 합쳐주기
         # 3. 합친 값이 가장 큰 값보다 크다면 True, 아니면 False를 answer에 추가하기
         answer = []
-        max_candies = max(candies)
+        maxnum = max(candies)
         for candy in candies:
             added_candy = candy + extraCandies
-            # print(added_candy, max_candies)
-            if added_candy >= max_candies:
+            print(added_candy, maxnum)
+            if added_candy >= maxnum:
                 answer.append(True)
-            else: 
-                answer.append(False)           
+            else:
+                answer.append(False)
         return answer
-
-        
