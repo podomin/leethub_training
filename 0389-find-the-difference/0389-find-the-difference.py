@@ -4,6 +4,7 @@ class Solution:
         answer = None
         s_count = Counter(s)
         t_count = Counter(t)
+        # return list((t_count-s_count).keys())[0]
         a = t_count-s_count
         for k,v in a.items():
             return k
