@@ -4,5 +4,5 @@ class Solution:
             b = n-i
             if '0' not in str(i) and '0' not in str(b) :
                 answer = [i,b]
-            pass
+                break
         return answer
